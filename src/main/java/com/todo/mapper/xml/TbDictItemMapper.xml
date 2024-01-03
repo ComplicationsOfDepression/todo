@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.todo.mapper.TbDictItemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.todo.pojo.TbDictItem">
+        <id column="id" property="id" />
+        <result column="type" property="type" />
+        <result column="code" property="code" />
+        <result column="value" property="value" />
+        <result column="sort" property="sort" />
+        <result column="remark" property="remark" />
+        <result column="create_username" property="createUsername" />
+        <result column="update_username" property="updateUsername" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_delete" property="isDelete" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, type, code, value, sort, remark, create_username, update_username, create_time, update_time, is_delete
+    </sql>
+
+</mapper>
